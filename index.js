@@ -129,16 +129,16 @@ function Baby(name, age, favoriteToy) {
 }
 
 Baby.prototype.play = function(){
-  return `Playing with ${this.favoriteToy}`;
+  return `Playing with ${this.favoriteToy}`; 
 }
 
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. Window Binding - throwing an error and this not knowing what it is in reference to
+  2. Implicit Binding - look to the left of the dot
+  3. Explicit Binding - this keyword is used with .call (immediately invokes), .appl (immediately invokes) or .bind ( does NOT immediately invoke)
+  4. New Binding - new keyword in the function and at invocation constructor function uses new keyword, pointing ti the new object that is created.
 */
 
 
